@@ -1,27 +1,44 @@
 import styled from "styled-components";
+import { AppBar, AppBarTitle } from "@react-md/app-bar";
 import { NavLink } from "react-router-dom";
 
-export const HeaderBar = styled.header`
+// export const HeaderBar = styled.header`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   background-position: center;
+//   background-color: #FFF;
+//   width: 100%;
+//   @media (min-width: 600px) {
+//     flex-direction: row;
+//   }
+// `;
+
+export const HeaderBar = styled(AppBar)`
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-position: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  border-radius: 10px;
   background-color: #FFF;
-  width: 100%;
-  @media (min-width: 600px) {
-    flex-direction: row;
-  }
+  margin: 0px;
 `;
 
-export const Title = styled.h1`
+// export const Title = styled.h1`
+//   color: #000;
+//   font-size: clamp(16px, 8vw, 30px);
+//   font-weight: normal;
+//   opacity: 90%;
+//   width: 80%;
+//   @media (min-width: 600px) {
+//     flex-direcion: row;
+//   }
+// `;
+
+export const Title = styled(AppBarTitle)`
+  margin-left: 0px;
+  position: relative;
   color: #000;
-  font-size: clamp(16px, 8vw, 30px);
-  font-weight: normal;
-  opacity: 90%;
-  width: 80%;
-  @media (min-width: 600px) {
-    flex-direcion: row;
-  }
 `;
 
 export const NavBar = styled.nav`
@@ -45,5 +62,14 @@ export const NavElem = styled(NavLink)`
   color: #000;
   &:hover {
     color: #8282fe;
+  }
+`;
+
+export const Subtitle = styled(AppBarTitle)`
+  display: none;
+  margin: 5px;
+  color: #000;
+  @media (min-width: 600px) {
+    display: inline;
   }
 `;
