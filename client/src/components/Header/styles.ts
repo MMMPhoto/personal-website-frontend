@@ -16,6 +16,7 @@ export const HeaderBar = styled.header`
 export const Title = styled.h1`
   color: #000;
   font-size: clamp(16px, 8vw, 30px);
+  font-weight: normal;
   opacity: 90%;
   width: 80%;
   @media (min-width: 600px) {
