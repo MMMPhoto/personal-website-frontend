@@ -36,6 +36,7 @@ export const HeaderBar = styled(AppBar)`
 // `;
 
 export const Title = styled(AppBarTitle)`
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   margin-left: 0px;
   position: relative;
   color: #000;
