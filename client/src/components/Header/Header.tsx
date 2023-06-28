@@ -31,8 +31,8 @@ const Header = () => {
             <NavElem to="/Software">
               Software
             </NavElem>
-            <NavElem to="/Photography">
-              Photography
+            <NavElem to="/Videography">
+              Videography
             </NavElem>
             <NavElem to="/Contact">
               Contact
@@ -50,8 +50,8 @@ const Header = () => {
             <MenuItem onClick={() => navigate("/Software")}>
               Software
             </MenuItem>
-            <MenuItem onClick={() => navigate("/Photography")}>
-              Photography
+            <MenuItem onClick={() => navigate("/Videography")}>
+              Videography
             </MenuItem>
             <MenuItem onClick={() => navigate("/Contact")}>
               Contact
