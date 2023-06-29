@@ -5,6 +5,7 @@ import adoptMeScreenshot from "../../images/Adopt-Me-Screenshot.png";
 import socialApi from "../../images/Social-Media-API-Screenshot.png";
 import jobSearchScreenshot from "../../images/job-search-automate-screenshot.png";
 import viewFromHereScreenshot from "../../images/View-From-Here-screenshot.png";
+import { PageContainer, PortfolioCard } from "./styles";
 
 const Software = () => {
 
@@ -66,26 +67,24 @@ const Software = () => {
 ];
 
   return (
-    <div>
-      <h2>Portfolio</h2>
-      <div>
+    <PageContainer>
+      <h3>Portfolio</h3>
         {portfolioItems.slice(0).reverse().map((item) => (
-          <div key={item.id}>
-              <div>
-                <img src={item.imgSrc} alt={item.name}></img>
-              </div>
-              <div>
-                <h5>
-                  <a href={item.deploymentUrl} target="_blank" rel="noreferrer">{item.name}</a>
-                  <a href={item.githubRepo} target="_blank" rel="noreferrer"><AiFillGithub /></a>
-                </h5>
-                {/* {isMobile ? <></> : <p className="card-text text-center w-100 h-80 m-2 portfolio-desc">{item.skills}</p>}
-                {isTablet ? <></> : <p className="card-text text-center w-100 h-80 m-2 portfolio-desc">{item.description}</p>} */}
-              </div>
-          </div>
+          <PortfolioCard key={item.id}>
+            <div>
+              <img style={{width: "100%"}} src={item.imgSrc} alt={item.name}></img>
+            </div>
+            <div>
+              <h5>
+                <a href={item.deploymentUrl} target="_blank" rel="noreferrer">{item.name}</a>
+                <a href={item.githubRepo} target="_blank" rel="noreferrer"><AiFillGithub /></a>
+              </h5>
+              {/* {isMobile ? <></> : <p className="card-text text-center w-100 h-80 m-2 portfolio-desc">{item.skills}</p>}
+              {isTablet ? <></> : <p className="card-text text-center w-100 h-80 m-2 portfolio-desc">{item.description}</p>} */}
+            </div>
+          </PortfolioCard>
         ))}
-      </div>
-    </div>
+    </PageContainer>
   )
 };
 
