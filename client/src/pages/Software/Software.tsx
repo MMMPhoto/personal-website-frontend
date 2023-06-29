@@ -1,10 +1,10 @@
 // import { CardHeader, CardTitle } from "@react-md/card";
 // import { AboutContainer, AboutCard, AboutContent } from "./styles";
 import { AiFillGithub } from "react-icons/ai";
-import adoptMeScreenshot from "../../images/Adopt-Me-Screenshot.png";
-import socialApi from "../../images/Social-Media-API-Screenshot.png";
-import jobSearchScreenshot from "../../images/job-search-automate-screenshot.png";
-import viewFromHereScreenshot from "../../images/View-From-Here-screenshot.png";
+import adoptMeScreenshot from "../../assets/images/Adopt-Me-Screenshot.png";
+import socialApi from "../../assets/images/Social-Media-API-Screenshot.png";
+import jobSearchScreenshot from "../../assets/images/job-search-automate-screenshot.png";
+import viewFromHereScreenshot from "../../assets/images/View-From-Here-screenshot.png";
 import { PageContainer, PortfolioCard } from "./styles";
 
 const Software = () => {
