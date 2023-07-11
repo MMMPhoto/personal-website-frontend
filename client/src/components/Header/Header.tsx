@@ -41,6 +41,9 @@ const Header = () => {
           <MenuItem onClick={() => navigate("/Software")}>
             Software
           </MenuItem>
+          <MenuItem onClick={() => (window.location.href = "https://www.waxmell.com")}>
+            Photography
+          </MenuItem>
           <MenuItem onClick={() => navigate("/Videography")}>
             Videography
           </MenuItem>
