@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AppBar, AppBarTitle } from "@react-md/app-bar";
+import { MediaContainer } from "@react-md/media";
 import { NavLink } from "react-router-dom";
 
 // export const HeaderBar = styled.header`
@@ -23,6 +24,22 @@ export const HeaderBar = styled(AppBar)`
   background-color: #FFF;
   margin: 0px;
 `;
+
+export const TitleDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-left: 3%;
+`;
+
+export const MediaDiv = styled(MediaContainer)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+`;
+
 
 // export const Title = styled.h1`
 //   color: #000;
