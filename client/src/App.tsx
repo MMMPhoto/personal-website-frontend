@@ -10,6 +10,7 @@ import './App.css';
 const App = () => {
   return (
     <Router>
+      <div id="wrapper">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/Videography" element={<Videography />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      </div>
     </Router>
   )
 };
