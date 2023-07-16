@@ -27,9 +27,20 @@ export const AboutCard = styled(Card)`
 
 export const AboutContent = styled(CardContent)`
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
+`;
+
+export const TwoColumnResponsive = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: start;
+  }
 `;
 
 export const TextParagraph = styled.p`
-  width: 80%;
+  width: 100%;
 `;
